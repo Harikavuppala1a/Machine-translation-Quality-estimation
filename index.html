@@ -13,19 +13,19 @@
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="navbar-brand">
-            <a class="navbar-item">
+            <a class="navbar-item" href="#">
             Machine Translation Quality Estimation
           </a>
         </div>
         <div class="navbar-start">
             <!-- navbar items -->
-            <a class="navbar-item">
+            <a class="navbar-item" href="https://github.com/Harikavuppala1a/Harikavuppala1a.github.io">
               Github
             </a>
         </div>
 
         <div class="navbar-end">
-            <a class="navbar-item">
+            <a class="navbar-item" href="#team">
                 Team Members
             </a>
         </div>
@@ -47,19 +47,48 @@
 
 
     <div class="container">
+        <!-- SUMMARY -->
         <div class="box">
             <div class="content">
                 <h3 class="title">RECURRENT NEURAL NETWORK BASED SENTENCE LEVEL QUALITY ESTIMATION MODEL</h3>
-                <p>As recurrent neural networks (RNNs) have the strength for handling sequential data we apply RNNs to estimate the quality score of translation. Recurrent neural network (RNN) based quality estimation model is developed using two parts: In first
-                    part two bidirectional RNNs are used on the source and target sentences and in second part RNN is used for predicting the quality. In the first part in Figure 1 , the RNN-based NMT model generates quality vectors, which indicate a sequence of
-                    vectors about target sentences translation qualities. Each quality vector for target sentence has a vector unit representing the quality information about whether each target word is properly translated from source sentence or not. While generating
-                    the quality vectors first we use source and target sentences as inputs and find the word embeddings of both the sentences. Then bidirectional RNNs is applied on source sentence, which enable to fully utilize the bidirectional quality information
-                    and then give this information to target sentence and apply bidirectional RNN. From that we generate quality vectors for target words as outputs. In the second part in Figure 1, the final quality of translation at sentence level is predicted by
-                    using the quality vectors as inputs and RNN base model.</p>
-                </div>
+                <p>As recurrent neural networks (RNNs) have the strength for handling sequential data we apply RNNs to estimate the quality score of translation. Recurrent neural network (RNN) based quality estimation model is developed using two parts:
+                    In first part two bidirectional RNNs are used on the source and target sentences and in second part RNN is used for predicting the quality. In the first part in Figure 1 , the RNN-based NMT model generates quality vectors, which indicate
+                    a sequence of vectors about target sentences translation qualities. Each quality vector for target sentence has a vector unit representing the quality information about whether each target word is properly translated from source sentence
+                    or not. While generating the quality vectors first we use source and target sentences as inputs and find the word embeddings of both the sentences. Then bidirectional RNNs is applied on source sentence, which enable to fully utilize
+                    the bidirectional quality information and then give this information to target sentence and apply bidirectional RNN. From that we generate quality vectors for target words as outputs. In the second part in Figure 1, the final quality
+                    of translation at sentence level is predicted by using the quality vectors as inputs and RNN base model.</p>
+
+                <figure class="image">
+                    <img src="images/fig1.png" alt="">
+                </figure>
+            </div>
         </div>
+
+        <!-- LINKS -->
+
     </div>
 
+
+    <!-- FOOTER -->
+    <footer class="footer" id="team">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a class="icon" href="https://github.com/Harikavuppala1a/Harikavuppala1a.github.io">
+                      <i class="fa fa-github"></i>
+                    </a> &nbsp;
+                    <a class="icon" href="#">
+                      <i class="fa fa-youtube"></i>
+                    </a>
+                </p>
+                <p>
+                    <strong>A project by:</strong>
+                    <p>Mohammad Ishan Rayeen, Harika Abburi, Riya Pal and Saurav Goyal</p>
+
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
