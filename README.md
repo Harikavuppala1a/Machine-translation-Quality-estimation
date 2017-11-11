@@ -20,7 +20,7 @@ To create the model:
 
 python qualityscore/qescore.py --data_dir < directory contain quality vectors and labels > --traindir trainingdirectory
 
-To get the quality vectors:
+To get the quality scores:
 
 python qualityscore/qescore.py --data_dir < directory containing training vectors  > --traindir trainingdirectory --qescore
 
