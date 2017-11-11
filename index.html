@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <title>Machine Translation Quality Estimation</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+            Machine Translation Quality Estimation
+          </a>
+        </div>
+        <div class="navbar-start">
+            <!-- navbar items -->
+            <a class="navbar-item">
+              Github
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <a class="navbar-item">
+                Team Members
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="hero is-primary">
+        <div class="container">
+            <div class="hero-body">
+                <p class="title">Abstract</p>
+
+                <p class="">In this project we implemented recurrent neural network based model for estimating the quality of machine translation output. To predict the quality vectors (whether each sentence in translation is properly translated), a bi-directional
+                    recurrent neural network architecture is used on both the source and target sentence to fully utilize the bi-directional quality information from both the sentences. These quality vectors are then used as the input to the recurrent
+                    neural network to predict the final quality of translation.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <h3 class="title">RECURRENT NEURAL NETWORK BASED SENTENCE LEVEL QUALITY ESTIMATION MODEL</h3>
+                <p>As recurrent neural networks (RNNs) have the strength for handling sequential data we apply RNNs to estimate the quality score of translation. Recurrent neural network (RNN) based quality estimation model is developed using two parts: In first
+                    part two bidirectional RNNs are used on the source and target sentences and in second part RNN is used for predicting the quality. In the first part in Figure 1 , the RNN-based NMT model generates quality vectors, which indicate a sequence of
+                    vectors about target sentences translation qualities. Each quality vector for target sentence has a vector unit representing the quality information about whether each target word is properly translated from source sentence or not. While generating
+                    the quality vectors first we use source and target sentences as inputs and find the word embeddings of both the sentences. Then bidirectional RNNs is applied on source sentence, which enable to fully utilize the bidirectional quality information
+                    and then give this information to target sentence and apply bidirectional RNN. From that we generate quality vectors for target words as outputs. In the second part in Figure 1, the final quality of translation at sentence level is predicted by
+                    using the quality vectors as inputs and RNN base model.</p>
+                </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
